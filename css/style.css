@@ -1,0 +1,80 @@
+body{
+    overflow-x: hidden;
+}
+/*Carousel Edit*/
+@media only screen and (min-width: 720px){
+    .carousel-inner{
+        height: 100vh !important;
+    }
+}
+
+.carousel-panel{
+    opacity:0.9;
+    color: black;
+    z-index: 101;
+    position: absolute;
+    margin-top: 55vh;
+    margin-left: 45vw;
+}
+
+/* About Section */
+#about{
+    min-height: 100vh;
+}
+.section-title{
+    border-bottom: 3px solid black;
+    padding-bottom: 0.3em;
+}
+#about p{
+    text-align: justify;
+}
+@media only screen and (max-width:720px){
+    #about .col{
+        padding-left: 0;
+    }
+    .carousel-panel{
+        margin-top: 15vh;
+    }
+}
+
+/* Editing Navbar */
+.navbar{
+    background: rgba(255, 193, 7, 0.5);
+}
+.nav-item{
+    font-weight: 600;
+}
+.navbar-brand{
+    font-weight: 600;
+    font-family: serif;
+    font-size: 1.5em;
+}
+
+/*Catalogue Section*/
+#catalogue{
+    background: url("../img/hd1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.category-1{
+    margin-top: 2.5em;
+    text-align: center;
+    color:#ffc107;
+}
+.category-2{
+    margin-top: 2.5em;
+    text-align: center;
+/*    color:#ffc107;*/
+}
+
+/*Footer Section*/
+#footer{
+    background: #ffc107;
+    color: white;
+}
+.wafixed {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 999;
+}
