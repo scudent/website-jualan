@@ -18,12 +18,12 @@ jobs:
     - name: Build with Maven
       run: mvn clean install 
     - name: SonarQube Scan
-      uses: sonarsource/sonarqube-scan-action@master
+      uses: sonarsource/sonarqube-scan-action@v3.0.0
       with:
         projectBaseDir: .
         args: >
           -Dsonar.organization=my-org
-          -Dsonar.projectKey=my-Java-web-app
+          -Dsonar.projectKey=test
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
